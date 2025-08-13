@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"160x600_atlas_1", frames: [[0,0,160,600],[280,998,77,18],[162,582,160,289],[312,0,160,168],[0,807,160,200],[0,602,160,203],[162,0,148,580],[316,873,126,53],[280,970,130,26],[162,873,152,95],[162,970,116,40],[0,1009,121,11],[123,1012,41,8]]}
+		{name:"160x600_atlas_1", frames: [[412,928,50,50],[0,0,160,600],[316,928,77,18],[162,582,160,289],[312,0,160,168],[0,807,160,200],[0,602,160,203],[162,0,148,580],[316,873,126,53],[280,970,130,26],[162,873,152,95],[162,970,116,40],[0,1009,121,11],[316,948,41,8]]}
 ];
 
 
@@ -27,95 +27,118 @@ lib.ssMetadata = [
 
 
 
-(lib.BG = function() {
+(lib.arrows_w = function() {
 	this.initialize(ss["160x600_atlas_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CTA = function() {
+(lib.BG = function() {
 	this.initialize(ss["160x600_atlas_1"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.i1 = function() {
+(lib.CTA = function() {
 	this.initialize(ss["160x600_atlas_1"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.i2 = function() {
+(lib.i1 = function() {
 	this.initialize(ss["160x600_atlas_1"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.i3 = function() {
+(lib.i2 = function() {
 	this.initialize(ss["160x600_atlas_1"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.i4 = function() {
+(lib.i3 = function() {
 	this.initialize(ss["160x600_atlas_1"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.LOGOs = function() {
+(lib.i4 = function() {
 	this.initialize(ss["160x600_atlas_1"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.t11 = function() {
+(lib.LOGOs = function() {
 	this.initialize(ss["160x600_atlas_1"]);
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.t12 = function() {
+(lib.t11 = function() {
 	this.initialize(ss["160x600_atlas_1"]);
 	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.t2 = function() {
+(lib.t12 = function() {
 	this.initialize(ss["160x600_atlas_1"]);
 	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.t3 = function() {
+(lib.t2 = function() {
 	this.initialize(ss["160x600_atlas_1"]);
 	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.t41 = function() {
+(lib.t3 = function() {
 	this.initialize(ss["160x600_atlas_1"]);
 	this.gotoAndStop(11);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.t42 = function() {
+(lib.t41 = function() {
 	this.initialize(ss["160x600_atlas_1"]);
 	this.gotoAndStop(12);
 }).prototype = p = new cjs.Sprite();
 
+
+
+(lib.t42 = function() {
+	this.initialize(ss["160x600_atlas_1"]);
+	this.gotoAndStop(13);
+}).prototype = p = new cjs.Sprite();
+// helper functions:
+
+function mc_symbol_clone() {
+	var clone = this._cloneProps(new this.constructor(this.mode, this.startPosition, this.loop, this.reversed));
+	clone.gotoAndStop(this.currentFrame);
+	clone.paused = this.paused;
+	clone.framerate = this.framerate;
+	return clone;
+}
+
+function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
+	var prototype = cjs.extend(symbol, cjs.MovieClip);
+	prototype.clone = mc_symbol_clone;
+	prototype.nominalBounds = nominalBounds;
+	prototype.frameBounds = frameBounds;
+	return prototype;
+	}
 
 
 (lib.Tween23 = function(mode,startPosition,loop,reversed) {
@@ -578,6 +601,100 @@ if (reversed == null) { reversed = false; }
 p.nominalBounds = new cjs.Rectangle(-80,-144.5,160,289);
 
 
+(lib.nutreplay = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("#0066CC").s().p("AhhBiIAAjDIDDAAIAADDg");
+	this.shape.setTransform(9.8,9.8);
+	this.shape._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(3).to({_off:false},0).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,19.6,19.6);
+
+
+(lib.muitenxoay = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.instance = new lib.arrows_w();
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = getMCSymbolPrototype(lib.muitenxoay, new cjs.Rectangle(0,0,50,50), null);
+
+
+(lib.clickTag_btn = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("#A2A2A2").s().p("EgXbAu4MAAAhdvMAu3AAAMAAABdvg");
+	this.shape.setTransform(150,300);
+	this.shape._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(3).to({_off:false},0).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,300,600);
+
+
+(lib.Chamuitenxoay = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// hinh_mui_ten
+	this.instance = new lib.muitenxoay();
+	this.instance.setTransform(14.55,10.25,0.31,0.31,0,0,0,25,25);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).to({rotation:-360},12).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(3.9,-0.4,21.3,21.299999999999997);
+
+
 // stage content:
 (lib._160x600 = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = false; }
@@ -589,6 +706,107 @@ if (reversed == null) { reversed = false; }
 	props.loop = loop;
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
+
+	this.actionFrames = [0,246];
+	// timeline functions:
+	this.frame_0 = function() {
+		this.clickTag_btn.addEventListener("click", function() {
+		    window.open(window.clickTag, "_blank");
+		});
+	}
+	this.frame_246 = function() {
+		this.mc_mui_ten_xoay.stop();
+		
+		
+		
+		/* Mouse Over Event
+		Mousing over the symbol instance executes a function in which you can add your own custom code.
+		
+		Instructions:
+		1. Add your custom code on a new line after the line that says "// Start your custom code" below.
+		The code will execute when the symbol instance is moused over.
+		frequency is the number of the times event should be triggered.
+		*/
+		var frequency = 5;
+		stage.enableMouseOver(frequency);
+		this.btn_replay.addEventListener("mouseover", fl_MouseOverHandler.bind(this));
+		
+		function fl_MouseOverHandler()
+		{
+			// Start your custom code
+			// This example code displays the words "Moused over" in the Output panel.
+			this.mc_mui_ten_xoay.play();
+			// End your custom code
+		}
+		
+		
+		
+		/* Mouse Out Event
+		Mousing out of the symbol instance executes a function in which you can add your own custom code.
+		
+		Instructions:
+		1. Add your custom code on a new line after the line that says "// Start your custom code" below.
+		The code will execute when the symbol instance is moused out of.
+		*/
+		var frequency = 5;
+		stage.enableMouseOver(frequency);
+		this.btn_replay.addEventListener("mouseout", fl_MouseOutHandler_4.bind(this));
+		
+		function fl_MouseOutHandler_4()
+		{
+			// Start your custom code
+			// This example code displays the words "Moused out" in the Output panel.
+			this.mc_mui_ten_xoay.gotoAndStop(0);
+			// End your custom code
+		}
+		
+		/* Mouse Click Event
+		Clicking on the specified symbol instance executes a function in which you can add your own custom code.
+		
+		Instructions:
+		1. Add your custom code on a new line after the line that says "// Start your custom code" below.
+		The code will execute when the symbol instance is clicked.
+		*/
+		
+		this.btn_replay.addEventListener("click", fl_MouseClickHandler.bind(this));
+		
+		function fl_MouseClickHandler()
+		{
+			globalThis.notRedirect=true;
+			// Start your custom code
+			// This example code displays the words "Mouse clicked" in the Output panel.
+			this.gotoAndPlay(0);
+			// End your custom code
+		}
+	}
+
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(246).call(this.frame_246).wait(27));
+
+	// nut_replay
+	this.btn_replay = new lib.nutreplay();
+	this.btn_replay.name = "btn_replay";
+	this.btn_replay.setTransform(9.8,9.8,1,1,0,0,0,9.8,9.8);
+	this.btn_replay._off = true;
+	new cjs.ButtonHelper(this.btn_replay, 0, 1, 2, false, new lib.nutreplay(), 3);
+
+	this.timeline.addTween(cjs.Tween.get(this.btn_replay).wait(241).to({_off:false},0).wait(32));
+
+	// mui_ten
+	this.mc_mui_ten_xoay = new lib.Chamuitenxoay();
+	this.mc_mui_ten_xoay.name = "mc_mui_ten_xoay";
+	this.mc_mui_ten_xoay.setTransform(7.8,-7.8,1,1,0,0,0,14.6,10.2);
+	this.mc_mui_ten_xoay._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.mc_mui_ten_xoay).wait(238).to({_off:false},0).to({y:7.7},9,cjs.Ease.quintInOut).wait(26));
+
+	// clickTag_btn
+	this.clickTag_btn = new lib.clickTag_btn();
+	this.clickTag_btn.name = "clickTag_btn";
+	this.clickTag_btn.setTransform(80,301.45,0.5333,1,0,0,0,150,300);
+	new cjs.ButtonHelper(this.clickTag_btn, 0, 1, 2, false, new lib.clickTag_btn(), 3);
+
+	this.timeline.addTween(cjs.Tween.get(this.clickTag_btn).wait(273));
 
 	// CTA
 	this.instance = new lib.Tween22("synched",0);
@@ -734,7 +952,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(80,300,80,301);
+p.nominalBounds = new cjs.Rectangle(80,284.5,80,317);
 // library properties:
 lib.properties = {
 	id: '16C905587F9C3C4EB2F13A4D644EE53C',
@@ -744,7 +962,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/160x600_atlas_1.png?1755059753910", id:"160x600_atlas_1"}
+		{src:"images/160x600_atlas_1.png", id:"160x600_atlas_1"}
 	],
 	preloads: []
 };
